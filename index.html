@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Hello, I'm Your Name">Hello, I'm Your Name</h1>
+            <p class="hero-subtitle">Data Analyst | Developer | Problem Solver</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate data analyst and developer who loves turning data into actionable insights. With expertise in analytics, visualization, and web development, I create solutions that make a difference.</p>
+                    <p>My journey in tech has been driven by curiosity and a desire to solve complex problems through elegant solutions.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#4F46E5" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-46.1C87.4,-33.1,90,-17.1,88.5,-1.8C87,13.5,81.4,27,73.1,38.9C64.8,50.8,53.8,61.1,40.9,68.7C28,76.3,13.2,81.2,-1.5,83.5C-16.2,85.8,-32.4,85.5,-45.8,78.9C-59.2,72.3,-69.8,59.4,-77.1,45.1C-84.4,30.8,-88.4,15.4,-87.7,0.5C-87,-14.4,-81.6,-28.8,-74.3,-42.3C-67,-55.8,-57.8,-68.4,-45.4,-76.3C-33,-84.2,-16.5,-87.4,-0.7,-86.3C15.1,-85.2,30.6,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Dashboard</h3>
+                        <p>Interactive analytics dashboard built with modern visualization techniques</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Analytics</span>
+                            <span class="tag">Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Web Application</h3>
+                        <p>Full-stack application with responsive design and modern UX</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Machine Learning Model</h3>
+                        <p>Predictive model with 95% accuracy for business forecasting</p>
+                        <div class="project-tags">
+                            <span class="tag">ML</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="--skill-percent: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="--skill-percent: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Excel</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="--skill-percent: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="--skill-percent: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="--skill-percent: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">React</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="--skill-percent: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-name">Git/GitHub</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="--skill-percent: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Tableau</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="--skill-percent: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">VS Code</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="--skill-percent: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>your.email@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Your City, Country</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
