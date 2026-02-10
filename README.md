@@ -139,7 +139,7 @@ Replace the SVG placeholder in the about section with your photo:
 - Mobile hamburger menu
 
 ### Hero Section
-- Animated glitch text effect
+- No, animated glitch text effect
 - Floating background circles with parallax
 - Gradient background
 - Call-to-action buttons
@@ -210,7 +210,7 @@ Deploy your portfolio for free using:
 2. Go to repository Settings
 3. Navigate to Pages section
 4. Select main branch as source
-5. Your site will be live at `https://yourusername.github.io/repository-name`
+5. Your site will be live at ` https://github.com/Lindiwe-22/portfolio-website`
 
 ### Netlify
 1. Connect your GitHub repository
@@ -224,9 +224,9 @@ Deploy your portfolio for free using:
 
 ## 📧 Contact
 
-Your Name - your.email@example.com
+Lindiwe Songelwa - sl.songelwa@hotmail.co.za
 
-Project Link: [https://github.com/yourusername/portfolio-website](https://github.com/yourusername/portfolio-website)
+Project Link: [https://github.com/yourusername/portfolio-website]( https://github.com/Lindiwe-22/portfolio-website)
 
 ## 🙏 Acknowledgments
 
