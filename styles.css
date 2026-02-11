@@ -335,15 +335,16 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
-
 .project-card {
     background: var(--white);
     border-radius: 15px;
     overflow: visible;
     box-shadow: var(--shadow-lg);
     transition: all 0.3s ease;
-    cursor: pointer;
     padding: 2rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -356,6 +357,7 @@ section {
     display: block;
     text-decoration: none;
     margin-bottom: 1.5rem;
+    width: 100%;
 }
 
 .project-circle-image {
@@ -363,7 +365,7 @@ section {
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    margin: -50px auto 0;
+    margin: -50px auto 1.5rem;
     border: 5px solid #2563eb;
     box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
     transition: all 0.3s ease;
@@ -383,6 +385,7 @@ section {
 
 .project-info {
     padding: 1rem 0;
+    width: 100%;
 }
 
 .project-info h3 {
@@ -396,7 +399,6 @@ section {
     margin-bottom: 1rem;
     line-height: 1.6;
 }
-
 .project-tags {
     display: flex;
     gap: 0.5rem;
