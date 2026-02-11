@@ -305,12 +305,14 @@ section {
     overflow: hidden;
     position: relative;
     animation: morph 8s ease-in-out infinite;
+    border: 5px solid #2563eb;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
 }
 
-.image-placeholder svg {
+.image-placeholder img {
     width: 100%;
     height: 100%;
-    animation: rotate 20s linear infinite;
+    object-fit: cover;
 }
 
 @keyframes morph {
