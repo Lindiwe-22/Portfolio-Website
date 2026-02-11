@@ -351,8 +351,10 @@ section {
 }
 
 .project-image {
-    height: 200px;
+    height: 250px;
     background: var(--gradient-1);
+    background-size: cover;
+    background-position: center;
     position: relative;
     overflow: hidden;
 }
