@@ -2,7 +2,7 @@
 
 A stunning, fully responsive portfolio website built with pure HTML, CSS, and JavaScript. This project showcases advanced CSS techniques including animations, gradients, glassmorphism, and modern web design principles.
 
-![Portfolio Preview](https://github.com/Lindiwe-22/portfolio-website)
+![Portfolio Preview](https://lindiwe-22.github.io/Portfolio-Website/)
 
 ## ✨ Features
 
@@ -60,7 +60,7 @@ portfolio-website/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/portfolio-website.git
+git clone https://github.com/lindiwe-22/portfolio-website.git
 ```
 
 2. Navigate to the project directory:
@@ -210,7 +210,7 @@ Deploy your portfolio for free using:
 2. Go to repository Settings
 3. Navigate to Pages section
 4. Select main branch as source
-5. Your site will be live at ` https://github.com/Lindiwe-22/portfolio-website`
+5. Your site will be live at `https://lindiwe-22.github.io/Portfolio-Website/`
 
 ### Netlify
 1. Connect your GitHub repository
@@ -226,7 +226,7 @@ Deploy your portfolio for free using:
 
 Lindiwe Songelwa - sl.songelwa@hotmail.co.za
 
-Project Link: [https://github.com/Lindiwe-22/portfolio-website]
+Project Link: [https://lindiwe-22.github.io/Portfolio-Website/]
 
 ## 🙏 Acknowledgments
 
