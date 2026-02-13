@@ -165,16 +165,28 @@ if (subtitle) {
     // Start typing effect after a short delay
     setTimeout(typeWriter, 1000);
 }
-// Custom Cursor
-const cursor = document.querySelector('.custom-cursor');
-const cursorFollower = document.querySelector('.custom-cursor-follower');
+// Custom Cursor - Fixed
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorOutline = document.querySelector('.cursor-outline');
 
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
+if (cursorDot && cursorOutline) {
+    window.addEventListener('mousemove', (e) => {
+        const x = e.clientX;
+        const y = e.clientY;
+        
+        cursorDot.style.transform = `translate(${x}px, ${y}px)`;
+        cursorOutline.style.transform = `translate(${x - 20}px, ${y - 20}px)`;
+    });
     
-    setTimeout(() => {
-        cursorFollower.style.left = e.clientX + 'px';
-        cursorFollower.style.top = e.clientY + 'px';
-    }, 100);
-});
+    document.querySelectorAll('a, button').forEach(elem => {
+        elem.addEventListener('mouseenter', () => {
+            cursorOutline.style.transform += ' scale(1.5)';
+            cursorOutline.style.borderColor = '#f97316';
+        });
+        
+        elem.addEventListener('mouseleave', () => {
+            cursorOutline.style.transform = cursorOutline.style.transform.replace(' scale(1.5)', '');
+            cursorOutline.style.borderColor = 'rgba(37, 99, 235, 0.5)';
+        });
+    });
+}
