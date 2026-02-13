@@ -165,3 +165,16 @@ if (subtitle) {
     // Start typing effect after a short delay
     setTimeout(typeWriter, 1000);
 }
+// Custom Cursor
+const cursor = document.querySelector('.custom-cursor');
+const cursorFollower = document.querySelector('.custom-cursor-follower');
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    
+    setTimeout(() => {
+        cursorFollower.style.left = e.clientX + 'px';
+        cursorFollower.style.top = e.clientY + 'px';
+    }, 100);
+});
