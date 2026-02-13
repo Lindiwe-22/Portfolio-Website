@@ -2,7 +2,7 @@
 
 A stunning, fully responsive portfolio website built with pure HTML, CSS, and JavaScript. This project showcases advanced CSS techniques including animations, gradients, glassmorphism, and modern web design principles.
 
-[Portfoio](https://lindiwe-22.github.io/Portfolio-Website/)
+[Portfolio](https://lindiwe-22.github.io/Portfolio-Website/)
 
 ## ✨ Features
 
