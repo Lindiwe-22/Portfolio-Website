@@ -190,3 +190,21 @@ if (cursorDot && cursorOutline) {
         });
     });
 }
+// ── Category Accordion ────────────────────────────────────────
+function toggleCategory(category) {
+    const panels = ['ds', 'devops'];
+    
+    panels.forEach(p => {
+        const panel  = document.getElementById('panel-' + p);
+        const circle = document.getElementById('circle-' + p);
+        
+        if (p === category) {
+            const isOpen = panel.style.display === 'block';
+            panel.style.display  = isOpen ? 'none' : 'block';
+            circle.classList.toggle('active', !isOpen);
+        } else {
+            panel.style.display = 'none';
+            circle.classList.remove('active');
+        }
+    });
+}
