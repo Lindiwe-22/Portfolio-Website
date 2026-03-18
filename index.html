@@ -62,114 +62,205 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+  <!-- Projects Section -->
 <section id="projects" class="projects">
     <div class="container">
         <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            
-            <!-- SA Crime Intelligence Report -->
-            <div class="project-card">
-                <a href="https://github.com/Lindiwe-22/South-African-Crime-Intelligence-Report" target="_blank" class="project-image-link">
-                <div class="project-circle-image">
-                        <img src="https://news.unitednetwork.earth/wp-content/uploads/2024/01/South-Africa-Violent-Crime-Organized-Crime-Failing-Justice-System-Private-Security-Industry-750x422.jpg" alt="SA Crime">
-                    </div>
-            <div class="project-info">
-                <h3>SA Crime Intelligence Report</h3>
-                    <p>A rigorous data science interrogation of South Africa's Q3 2025/26 crime statistics, cross-referenced with two decades of SAMRC femicide surveillance data. Applies correlation analysis, anomaly detection, OLS regression, and ARIMA forecasting to answer whether the reported 3.2% rape decrease reflects genuine progress — or fewer women trusting a broken system.</p>
-            <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">ARIMA</span>
-            <span class="tag">Statsmodels</span>
-            <span class="tag">Scikit-learn</span>
-            <span class="tag">SAPS Data</span>
-            <span class="tag">SAMRC</span>
-        </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:1rem;">
-            <a href="https://github.com/Lindiwe-22/South-African-Crime-Intelligence-Report" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">📓 View Notebook</a>
-<a href="https://github.com/Lindiwe-22/South-African-Crime-Intelligence-Report/blob/main/intelligence_dashboard.png" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">📊 Dashboard</a>
-        </div>
-    </div>
-</div>
-            <!-- Mining Quality Intelligence -->
-            <div class="project-card">
-                <a href="https://github.com/Lindiwe-22/Mining_Quality_Dashboard" target="_blank" class="project-image-link">
-                <div class="project-circle-image">
-                        <img src="https://www.mining-technology.com/wp-content/uploads/sites/19/2021/05/WesternAustraliaIronOre.jpg" alt="Ore Mining">
-                    </div>
-                <div class="project-info">
-                    <h3>Mining Quality Intelligence</h3>
-                    <p>A full-stack ML system predicting silica concentrate quality failures in an iron ore flotation plant hours before they occur. Trained on 737,453 hourly sensor readings using XGBoost and a Neural Network with SMOTE balancing, business-optimal threshold tuning, and a live Streamlit dashboard with real-time GREEN / AMBER / RED operator alerts.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">XGBoost</span>
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">Streamlit</span>
-                        <span class="tag">SMOTE</span>
-                        <span class="tag">Plotly</span>
-                    </div>
-                    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:1rem;">
-                        <a href="https://lindiwe-22-mining-quality-dashboard-app.streamlit.app" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">🚀 Live Dashboard</a>
-                        <a href="https://github.com/Lindiwe-22/mining-quality-dashboard" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">GitHub</a>
-                    </div>
+        <p style="text-align:center; color:#888; margin-bottom:2rem;">
+            Click a category to explore the projects inside.
+        </p>
+
+        <!-- Category Circles -->
+        <div style="display:flex; justify-content:center; gap:60px; margin-bottom:2rem; flex-wrap:wrap;">
+
+            <!-- Data Science Circle -->
+            <div class="category-circle" onclick="toggleCategory('ds')" id="circle-ds">
+                <div class="category-circle-inner">
+                    <div style="font-size:2.5rem;">🔬</div>
+                    <div style="font-weight:700; font-size:1rem; margin-top:8px; line-height:1.3;">Data Science<br>Projects</div>
+                    <div style="font-size:0.75rem; margin-top:6px; opacity:0.8;">5 projects</div>
                 </div>
             </div>
 
-            <!-- Tyla Grammy Sentiment Analysis -->
-            <div class="project-card">
-                <a href="https://github.com/Lindiwe-22/tyla-grammy-nlp-analysis" target="_blank" class="project-image-link">
-                    <div class="project-circle-image">
-                        <img src="https://iol-prod.appspot.com/image/5226f9462698ffec9d02642d4b7d43fdee53654b/940/jpeg" alt="Tyla Grammy">
-                    </div>
-                </a>
-                <div class="project-info">
-                    <h3>Tyla Grammy Sentiment Analysis</h3>
-                    <p>A powerhouse NLP study dissecting the global phenomenon of Tyla's historic Grammy triumph, revealing a staggering 82% positive sentiment across 214 authentic fan reactions spanning 20+ countries. This isn't just data—it's a compelling narrative of cultural impact, leveraging cutting-edge dual-model sentiment validation (VADER + TextBlob) to separate genuine enthusiasm from algorithmic noise. Stunning interactive visualizations transform raw YouTube commentary into actionable brand intelligence, pinpointing high-growth markets and quantifying the ROI of award season visibility. The methodology serves as a scalable blueprint for music industry stakeholders seeking data-driven competitive advantages in an oversaturated market. Ultimately, this project showcases how sophisticated technical proficiency translates into deliciously strategic business insights for the global creative economy.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">NLP</span>
-                        <span class="tag">Sentiment Analysis</span>
-                        <span class="tag">YouTube Data API v3</span>
-                        <span class="tag">Regex</span>
-                        <span class="tag">Pandas</span>
-                        <span class="tag">VADER</span>
-                        <span class="tag">TextBlob</span>
-                        <span class="tag">Seaborn</span>
-                        <span class="tag">Matplotlib</span>
-                        <span class="tag">WordCloud</span>
-                    </div>
+            <!-- DevOps Circle -->
+            <div class="category-circle" onclick="toggleCategory('devops')" id="circle-devops">
+                <div class="category-circle-inner">
+                    <div style="font-size:2.5rem;">⚙️</div>
+                    <div style="font-weight:700; font-size:1rem; margin-top:8px; line-height:1.3;">DevOps<br>Projects</div>
+                    <div style="font-size:0.75rem; margin-top:6px; opacity:0.8;">1 project</div>
                 </div>
             </div>
-            <!-- 💎 Diamonds Are Forever -->
-<div class="project-card">
-    <a href="https://github.com/Lindiwe-22/diamonds-are-forever" target="_blank" class="project-image-link">
-        <div class="project-circle-image">
-            <img src="https://i.pinimg.com/736x/ce/b3/7c/ceb37caf6dbee69c447ea4af20c05bcb.jpg" alt="Diamonds Are Forever">
+
         </div>
-    </a>
-    <div class="project-info">
-        <h3>Diamonds Are Forever</h3>
-        <p>Full-stack ML study investigating the structural disruption of the global diamond industry — quantifying the 73.8% lab-grown price collapse since 2020, identifying five distinct buyer archetypes via K-Means clustering, and forecasting retail diamond prices with R²=0.9997 (Random Forest, RMSE=$136) — exceeding the published academic benchmark. Deployed as a live 4-page Streamlit intelligence dashboard.</p>
-        <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Random Forest</span>
-            <span class="tag">XGBoost</span>
-            <span class="tag">K-Means</span>
-            <span class="tag">SMOTE</span>
-            <span class="tag">PCA</span>
-            <span class="tag">Streamlit</span>
-            <span class="tag">Plotly</span>
+
+        <!-- Data Science Projects Panel -->
+        <div id="panel-ds" class="category-panel" style="display:none;">
+            <h3 style="text-align:center; margin-bottom:1.5rem; color:#333;">🔬 Data Science Projects</h3>
+            <div class="projects-grid">
+
+                <!-- SA Crime Intelligence Report -->
+                <div class="project-card">
+                    <a href="https://github.com/Lindiwe-22/South-African-Crime-Intelligence-Report" target="_blank" class="project-image-link">
+                        <div class="project-circle-image">
+                            <img src="https://news.unitednetwork.earth/wp-content/uploads/2024/01/South-Africa-Violent-Crime-Organized-Crime-Failing-Justice-System-Private-Security-Industry-750x422.jpg" alt="SA Crime">
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>SA Crime Intelligence Report</h3>
+                        <p>A rigorous data science interrogation of South Africa's Q3 2025/26 crime statistics, cross-referenced with two decades of SAMRC femicide surveillance data. Applies correlation analysis, anomaly detection, OLS regression, and ARIMA forecasting to answer whether the reported 3.2% rape decrease reflects genuine progress — or fewer women trusting a broken system.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">ARIMA</span>
+                            <span class="tag">Statsmodels</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">SAPS Data</span>
+                            <span class="tag">SAMRC</span>
+                        </div>
+                        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:1rem;">
+                            <a href="https://github.com/Lindiwe-22/South-African-Crime-Intelligence-Report" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">📓 View Notebook</a>
+                            <a href="https://github.com/Lindiwe-22/South-African-Crime-Intelligence-Report/blob/main/intelligence_dashboard.png" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">📊 Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mining Quality Intelligence -->
+                <div class="project-card">
+                    <a href="https://github.com/Lindiwe-22/Mining_Quality_Dashboard" target="_blank" class="project-image-link">
+                        <div class="project-circle-image">
+                            <img src="https://www.mining-technology.com/wp-content/uploads/sites/19/2021/05/WesternAustraliaIronOre.jpg" alt="Ore Mining">
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>Mining Quality Intelligence</h3>
+                        <p>A full-stack ML system predicting silica concentrate quality failures in an iron ore flotation plant hours before they occur. Trained on 737,453 hourly sensor readings using XGBoost and a Neural Network with SMOTE balancing, business-optimal threshold tuning, and a live Streamlit dashboard with real-time GREEN / AMBER / RED operator alerts.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">SMOTE</span>
+                            <span class="tag">Plotly</span>
+                        </div>
+                        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:1rem;">
+                            <a href="https://lindiwe-22-mining-quality-dashboard-app.streamlit.app" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">🚀 Live Dashboard</a>
+                            <a href="https://github.com/Lindiwe-22/mining-quality-dashboard" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tyla Grammy Sentiment Analysis -->
+                <div class="project-card">
+                    <a href="https://github.com/Lindiwe-22/Tyla-Grammy-NLP-Analysis" target="_blank" class="project-image-link">
+                        <div class="project-circle-image">
+                            <img src="https://iol-prod.appspot.com/image/5226f9462698ffec9d02642d4b7d43fdee53654b/940/jpeg" alt="Tyla Grammy">
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>Tyla Grammy Sentiment Analysis</h3>
+                        <p>A powerhouse NLP study dissecting the global phenomenon of Tyla's historic Grammy triumph, revealing a staggering 82% positive sentiment across 214 authentic fan reactions spanning 20+ countries. Leverages dual-model sentiment validation (VADER + TextBlob) to separate genuine enthusiasm from algorithmic noise, with stunning interactive visualizations transforming raw YouTube commentary into actionable brand intelligence.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">VADER</span>
+                            <span class="tag">TextBlob</span>
+                            <span class="tag">YouTube API</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">WordCloud</span>
+                        </div>
+                        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:1rem;">
+                            <a href="https://github.com/Lindiwe-22/Tyla-Grammy-NLP-Analysis" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">📓 View Notebook</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diamonds Are Forever -->
+                <div class="project-card">
+                    <a href="https://github.com/Lindiwe-22/diamonds-are-forever" target="_blank" class="project-image-link">
+                        <div class="project-circle-image">
+                            <img src="https://i.pinimg.com/736x/ce/b3/7c/ceb37caf6dbee69c447ea4af20c05bcb.jpg" alt="Diamonds Are Forever">
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>Diamonds Are Forever</h3>
+                        <p>Full-stack ML study investigating the structural disruption of the global diamond industry — quantifying the 73.8% lab-grown price collapse since 2020, identifying five distinct buyer archetypes via K-Means clustering, and forecasting retail diamond prices with R²=0.9997 (Random Forest, RMSE=$136) — exceeding the published academic benchmark. Deployed as a live 4-page Streamlit intelligence dashboard.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Random Forest</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">K-Means</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Plotly</span>
+                        </div>
+                        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:1rem;">
+                            <a href="https://diamonds-are-forever.streamlit.app/" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">🚀 Live Dashboard</a>
+                            <a href="https://github.com/Lindiwe-22/diamonds-are-forever" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SA Bank Trust Score (Data Science) -->
+                <div class="project-card">
+                    <a href="https://github.com/Lindiwe-22/SA-Bank-Trust-Score" target="_blank" class="project-image-link">
+                        <div class="project-circle-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_South_Africa.svg/800px-Flag_of_South_Africa.svg.png" alt="SA Bank Trust Score">
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>SA Bank Trust Score</h3>
+                        <p>A data-driven consumer intelligence dashboard scoring South Africa's six major banks across complaint resolution, regulatory sanctions, consumer favour rate and public sentiment. Built with a weighted normalisation model and deployed as a live multi-page Streamlit app — helping South African consumers choose a bank based on evidence, not marketing.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">OBS Data</span>
+                            <span class="tag">SARB Data</span>
+                        </div>
+                        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:1rem;">
+                            <a href="https://sa-bank-trust-score.streamlit.app" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">🚀 Live Dashboard</a>
+                            <a href="https://github.com/Lindiwe-22/SA-Bank-Trust-Score" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:1rem;">
-            <a href="https://diamonds-are-forever.streamlit.app/" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">🚀 Live Dashboard</a>
-            <a href="https://github.com/Lindiwe-22/diamonds-are-forever" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">GitHub</a>
+
+        <!-- DevOps Projects Panel -->
+        <div id="panel-devops" class="category-panel" style="display:none;">
+            <h3 style="text-align:center; margin-bottom:1.5rem; color:#333;">⚙️ DevOps Projects</h3>
+            <div class="projects-grid">
+
+                <!-- SA Bank Trust Score (DevOps) -->
+                <div class="project-card">
+                    <a href="https://github.com/AZ400-DevOps-Portfolio/SA-Bank-Trust-Score" target="_blank" class="project-image-link">
+                        <div class="project-circle-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_South_Africa.svg/800px-Flag_of_South_Africa.svg.png" alt="SA Bank Trust Score DevOps">
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>SA Bank Trust Score — DevOps Pipeline</h3>
+                        <p>A production-grade CI/CD pipeline built on the SA Bank Trust Score Streamlit app. Features four automated GitHub Actions workflows: app health checks on every push, data quality validation across all CSV sources, a scheduled monthly data freshness monitor that auto-opens GitHub Issues, and a Docker build check ensuring the app can always be containerised cleanly.</p>
+                        <div class="project-tags">
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">YAML</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:1rem;">
+                            <a href="https://github.com/AZ400-DevOps-Portfolio/SA-Bank-Trust-Score/actions" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">⚙️ View Pipelines</a>
+                            <a href="https://github.com/AZ400-DevOps-Portfolio/SA-Bank-Trust-Score" target="_blank" class="social-link" style="font-size:0.8rem; padding:0.5rem 1rem;">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-</div>
-        </div>
+
     </div>
 </section>
-
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
