@@ -226,7 +226,7 @@ Deploy your portfolio for free using:
 
 Lindiwe Songelwa - sl.songelwa@hotmail.co.za
 
-Project Link: [https://lindiwe-22.github.io/Portfolio-Website/]
+Project Link: https://lindiwe-22.github.io/Portfolio-Website/
 
 ## 🙏 Acknowledgments
 
