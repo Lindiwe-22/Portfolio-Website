@@ -654,8 +654,12 @@ body {
     cursor: none;
 }
 
-a, button, input, textarea {
+a, button {
     cursor: none;
+}
+
+input, textarea {
+    cursor: text;
 }
 
 .cursor-dot {
@@ -681,7 +685,7 @@ a, button, input, textarea {
     left: 0;
     pointer-events: none;
     z-index: 9999;
-    transition: all 0.15s ease;
+    transition: transform 0.15s ease, opacity 0.15s ease;
 }
 /* ── Category Circles ────────────────────────────────────────── */
 .category-circle {
