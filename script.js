@@ -81,21 +81,7 @@ document.querySelectorAll('.skill-category').forEach((category, index) => {
     observer.observe(category);
 });
 
-// Form submission handling
-const contactForm = document.querySelector('.contact-form');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(contactForm);
-    
-    // Show success message (you would typically send this to a backend)
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    
-    // Reset form
-    contactForm.reset();
-});
+// Form submission handling — Formspree handles this, no preventDefault needed
 
 // Add active state to navigation based on scroll position
 window.addEventListener('scroll', () => {
@@ -170,23 +156,38 @@ const cursorDot = document.querySelector('.cursor-dot');
 const cursorOutline = document.querySelector('.cursor-outline');
 
 if (cursorDot && cursorOutline) {
+    let mouseX = 0, mouseY = 0;
+    let outlineX = 0, outlineY = 0;
+
     window.addEventListener('mousemove', (e) => {
-        const x = e.clientX;
-        const y = e.clientY;
-        
-        cursorDot.style.transform = `translate(${x}px, ${y}px)`;
-        cursorOutline.style.transform = `translate(${x - 20}px, ${y - 20}px)`;
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        cursorDot.style.left = mouseX - 7 + 'px';
+        cursorDot.style.top  = mouseY - 7 + 'px';
     });
-    
+
+    // Smooth lagging outline using requestAnimationFrame
+    function animateOutline() {
+        outlineX += (mouseX - outlineX) * 0.15;
+        outlineY += (mouseY - outlineY) * 0.15;
+
+        cursorOutline.style.left = outlineX - 20 + 'px';
+        cursorOutline.style.top  = outlineY - 20 + 'px';
+
+        requestAnimationFrame(animateOutline);
+    }
+    animateOutline();
+
+    // Scale on hover
     document.querySelectorAll('a, button').forEach(elem => {
         elem.addEventListener('mouseenter', () => {
-            cursorOutline.style.transform += ' scale(1.5)';
+            cursorOutline.style.transform = 'scale(1.5)';
             cursorOutline.style.borderColor = '#f97316';
         });
-        
         elem.addEventListener('mouseleave', () => {
-            cursorOutline.style.transform = cursorOutline.style.transform.replace(' scale(1.5)', '');
-            cursorOutline.style.borderColor = 'rgba(37, 99, 235, 0.5)';
+            cursorOutline.style.transform = 'scale(1)';
+            cursorOutline.style.borderColor = 'rgba(249, 115, 22, 0.5)';
         });
     });
 }
