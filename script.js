@@ -152,9 +152,6 @@ if (subtitle) {
     // Start typing effect after a short delay
     setTimeout(typeWriter, 1000);
 }
-// Custom Cursor - Fixed
-const cursorDot = document.querySelector('.cursor-dot');
-const cursorOutline = document.querySelector('.cursor-outline');
 
 
    // ── Category Accordion ────────────────────────────────────────
