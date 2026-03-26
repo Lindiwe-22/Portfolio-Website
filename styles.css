@@ -654,12 +654,8 @@ body {
     cursor: none;
 }
 
-a, button {
+a, button, input, textarea {
     cursor: none;
-}
-
-input, textarea {
-    cursor: text;
 }
 
 .cursor-dot {
