@@ -172,3 +172,27 @@ function toggleCategory(category) {
         }
     });
 }
+
+// Custom Cursor ────────────────────────────────────────
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorOutline = document.querySelector('.cursor-outline');
+
+window.addEventListener('mousemove', (e) => {
+    cursorDot.style.left = e.clientX + 'px';
+    cursorDot.style.top = e.clientY + 'px';
+    cursorOutline.style.left = e.clientX + 'px';
+    cursorOutline.style.top = e.clientY + 'px';
+});
+
+document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+        cursorOutline.style.width = '52px';
+        cursorOutline.style.height = '52px';
+        cursorOutline.style.borderColor = 'rgba(249, 115, 22, 0.9)';
+    });
+    el.addEventListener('mouseleave', () => {
+        cursorOutline.style.width = '36px';
+        cursorOutline.style.height = '36px';
+        cursorOutline.style.borderColor = 'rgba(249, 115, 22, 0.6)';
+    });
+});
