@@ -65,9 +65,6 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Keep cursor always visible regardless of section opacity
-document.querySelector('.cursor-dot').style.opacity = '1';
-document.querySelector('.cursor-outline').style.opacity = '1';
 
 // Observe project cards
 document.querySelectorAll('.project-card').forEach((card, index) => {
@@ -159,43 +156,8 @@ if (subtitle) {
 const cursorDot = document.querySelector('.cursor-dot');
 const cursorOutline = document.querySelector('.cursor-outline');
 
-if (cursorDot && cursorOutline) {
-    let mouseX = 0, mouseY = 0;
-    let outlineX = 0, outlineY = 0;
 
-    window.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-
-        cursorDot.style.left = mouseX - 7 + 'px';
-        cursorDot.style.top  = mouseY - 7 + 'px';
-    });
-
-    // Smooth lagging outline using requestAnimationFrame
-    function animateOutline() {
-        outlineX += (mouseX - outlineX) * 0.15;
-        outlineY += (mouseY - outlineY) * 0.15;
-
-        cursorOutline.style.left = outlineX - 20 + 'px';
-        cursorOutline.style.top  = outlineY - 20 + 'px';
-
-        requestAnimationFrame(animateOutline);
-    }
-    animateOutline();
-
-    // Scale on hover
-    document.querySelectorAll('a, button').forEach(elem => {
-        elem.addEventListener('mouseenter', () => {
-            cursorOutline.style.transform = 'scale(1.5)';
-            cursorOutline.style.borderColor = '#f97316';
-        });
-        elem.addEventListener('mouseleave', () => {
-            cursorOutline.style.transform = 'scale(1)';
-            cursorOutline.style.borderColor = 'rgba(249, 115, 22, 0.5)';
-        });
-    });
-}
-// ── Category Accordion ────────────────────────────────────────
+   // ── Category Accordion ────────────────────────────────────────
 function toggleCategory(category) {
     const panels = ['ds', 'devops'];
     
