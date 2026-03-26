@@ -65,6 +65,10 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
+// Keep cursor always visible regardless of section opacity
+document.querySelector('.cursor-dot').style.opacity = '1';
+document.querySelector('.cursor-outline').style.opacity = '1';
+
 // Observe project cards
 document.querySelectorAll('.project-card').forEach((card, index) => {
     card.style.opacity = '0';
