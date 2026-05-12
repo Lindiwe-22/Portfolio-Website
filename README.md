@@ -111,7 +111,7 @@ xdg-open index.html    # Linux
 **Lindiwe Songelwa**
 - Email: sl.songelwa@hotmail.co.za
 - GitHub: [github.com/Lindiwe-22](https://github.com/Lindiwe-22)
-- LinkedIn: [linkedin.com/in/lindiwe-songelwa](https://www.linkedin.com/in/lindiwe-songelwa)
+- LinkedIn: [linkedin.com/in/lindiwe-songelwa](https://za.linkedin.com/in/lindiwe-songelwa)
 - Credly: [credly.com/users/samnkelisiwe-lindiwe-songelwa](https://www.credly.com/users/samnkelisiwe-lindiwe-songelwa)
 
 ---
