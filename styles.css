@@ -450,40 +450,27 @@ section {
     gap: 0.5rem;
 }
 
+.skill-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .skill-name {
     font-weight: 600;
     color: var(--text-primary);
 }
 
-.skill-progress {
-    height: 10px;
-    background: #E2E8F0;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-.skill-fill {
-    height: 100%;
-    background: var(--gradient-3);
-    border-radius: 10px;
-    width: var(--skill-percent);
-    animation: fillBar 1.5s ease-out;
-    position: relative;
-}
-
-.skill-fill::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(90deg, 
-        rgba(255, 255, 255, 0) 0%, 
-        rgba(255, 255, 255, 0.3) 50%, 
-        rgba(255, 255, 255, 0) 100%);
-    animation: shimmer 2s infinite;
+.skill-percent {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.875rem;
 }
 
 @keyframes fillBar {
